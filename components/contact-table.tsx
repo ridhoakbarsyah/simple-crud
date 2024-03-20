@@ -12,7 +12,7 @@ const ContactTable = async ({query, currentPage}:{query: string; currentPage: nu
           <th className="py-3 px-6">Name</th>
           <th className="py-3 px-6">Email</th>
           <th className="py-3 px-6">Phone Number</th>
-          <th className="py-3 px-6">Created At</th>
+          <th className="py-3 px-2">Created At</th>
           <th className="py-3 px-6 text-center">Actions</th>
         </tr>
       </thead>
@@ -23,7 +23,7 @@ const ContactTable = async ({query, currentPage}:{query: string; currentPage: nu
           <td className="py-3 px-6">{contact.name}</td>
           <td className="py-3 px-6">{contact.email}</td>
           <td className="py-3 px-6">{contact.phone}</td>
-          <td className="py-3 px-6">{FormatDate(contact.createdAt.toString())}</td>
+          <td className="py-3 px-2">{FormatDate(contact.createdAt.toString())}</td>
           <td className="flex justify-center gap-1 py-3">
               <EditButton id={contact.id} />
               <DeleteButton id={contact.id} />
