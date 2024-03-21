@@ -6,9 +6,9 @@ import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 
 const ContactSchema = z.object({
-    name: z.string().min(6),
+    name: z.string().min(3),
     email: z.string().email().min(11),
-    phone: z.string().min(12)
+    phone: z.string().min(8)
 
 })
 
