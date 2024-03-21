@@ -26,7 +26,7 @@ const Search = () => {
 
   return (
     <div className="relative flex flex-1">
-      <input type="text" className="w-full border border-gray-200 py-2 pl-10 text-sm outline-2 rounded-sm" placeholder="Search..."
+      <input type="text" className="w-full border border-gray-500 py-2 pl-10 text-sm outline-2 rounded-sm" placeholder="Search..."
       onChange={(e) => handleSearch(e.target.value)}
       defaultValue={searchParams.get("query")?.toString()}
       />
